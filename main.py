@@ -8,7 +8,7 @@ class Mimosa:
         self.ips = ips
         self.dirName = "BackupMimosa"
         self.nameArqLog = "logoBackupMimosa.log"
-        self.data  = {"username": "configure", "password":"rs%$p33d"}
+        self.data  = {"username": "configure", "password":"senha"}
         self.file = open(self.nameArqLog, 'a')
         self.s = requests.Session()
 
@@ -48,8 +48,8 @@ class Mimosa:
 
 def main():
     ips = [
-        ["CRI-PTP-FRAN", "172.17.8.8"],
-        ["FRAN-PTP-CRI", "172.17.8.9"]
+        ["Equipamento1", "192.168.1.2"],
+        ["Equipamento2", "192.168.1.3"]
     ]
     m = Mimosa(ips)
     m.Download()
